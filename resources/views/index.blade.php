@@ -1,4 +1,4 @@
-@extends('layouts.app', ["current" => "index"])
+@extends('layouts.app1', ["current" => "index"])
 
 @section('title', 'Page Title')
 

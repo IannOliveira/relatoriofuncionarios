@@ -15,7 +15,14 @@ use App\Http\Controllers\TestController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('auth.login');
 });
 
 Route::get('/test', [TestController::class, 'test']);
+
+Route::get('/loginn', function() {
+    return view('layouts.login');
+});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('bdgd');
